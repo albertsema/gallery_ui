@@ -14,6 +14,9 @@
             {{ photo.source.name }}
           </a>
         </p>
+        <p>
+          <button @click.self="tagPhoto" class="button">Tag me</button>
+        </p>
       </div>
     </div>  </div>
 </template>
@@ -39,6 +42,9 @@ import photos from '@/photos.json';export default {
     closeLightbox() {
       this.$router.push('/');
     },
+    tagPhoto(){
+
+    }
   },
 };
 </script>
@@ -63,5 +69,15 @@ import photos from '@/photos.json';export default {
   background-color: #FFFFFF;
   display: inline-block;
   padding: 2rem;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
 }
 </style>

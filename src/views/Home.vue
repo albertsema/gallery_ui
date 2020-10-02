@@ -1,6 +1,7 @@
 <template>
   <Gallery />
-</template><script>
+</template>
+<script>
 import Gallery from '@/components/Gallery.vue';export default {
   name: 'home',
   components: {
