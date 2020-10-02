@@ -1,7 +1,10 @@
 <template>
   <div class="lightbox" @click.self="closeLightbox">    <img :src="photoUrl(photo.filename)">    <div class="lightbox-info">
       <div class="lightbox-info-inner">
-        <p v-if="photo.title">{{ photo.title }}</p><p v-if="photo.location">{{ photo.location }}</p><p v-if="photo.photographer">
+        <p v-if="photo.title">Title: {{ photo.title }}</p>
+        <p v-if="photo.location">Location: {{ photo.location }}</p>
+        <p v-if="photo.photographer">
+          Photographer:
           <a rel="nofollow" :href="photo.photographer.url">
             {{ photo.photographer.name }}
           </a>
